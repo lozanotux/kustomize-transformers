@@ -1,3 +1,4 @@
+# Key concept 1
 nameSuffix: -blue
 
 bases:
@@ -6,5 +7,6 @@ bases:
 patchesStrategicMerge:
   - deployment-patch.yaml
 
+# Key concept 2
 commonLabels:
   app: argocolors-app-blue
