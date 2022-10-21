@@ -1,0 +1,10 @@
+nameSuffix: -blue
+
+bases:
+  - ../../../base
+
+patchesStrategicMerge:
+  - deployment-patch.yaml
+
+commonLabels:
+  app: argocolors-app-blue

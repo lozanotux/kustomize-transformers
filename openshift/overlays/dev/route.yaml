@@ -1,0 +1,13 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: argocolors-app
+  labels:
+    app: argocolors-app
+spec:
+  to:
+    kind: Service
+    name: argocolors-app
+    weight: 100
+  port:
+    targetPort: 8080-tcp

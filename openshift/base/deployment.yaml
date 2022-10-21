@@ -1,0 +1,24 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: argocolors-app
+  labels:
+    app: argocolors-app
+spec:
+  strategy:
+    type: RollingUpdate
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argocolors-app
+  template:
+    metadata:
+      labels:
+        app: argocolors-app
+    spec:
+      containers:
+        - name: argocolors-app
+          image: docker.io/argoproj/rollouts-demo:red
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
