@@ -2,6 +2,8 @@
 
 In this repository you can found an use case of `Kustomize Transformers` in action to deploy an application using **ArgoCD** with a Blue/Green strategy.
 
+![snapshot](./snapshot.png)
+
 > **NOTE:** for more information about transformers you can see next link: [https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/). And you can check the file [openshift/overlays/prod/blue/kustomization.yaml](./openshift/overlays/prod/blue/kustomization.yaml) to see two key concepts.
 
 ## Pre-requisites
