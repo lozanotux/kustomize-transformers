@@ -8,4 +8,4 @@ spec:
     spec:
       containers:        
         - name: argocolors-app
-          image: docker.io/argoproj/rollouts-demo:red
+          image: docker.io/argoproj/rollouts-demo:yellow
